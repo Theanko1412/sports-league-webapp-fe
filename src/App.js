@@ -47,6 +47,7 @@ function App() {
       </div>
       <div style={{ paddingBottom: '80px' }}>
         <Routes>
+          <Route path="/" element={<Leagues />} />
           <Route path="/league" element={<Leagues />} />
           <Route path="/league/:name" element={<League />} />
           <Route path="/team" element={<Teams />} />
