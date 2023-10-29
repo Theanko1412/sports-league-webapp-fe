@@ -41,7 +41,7 @@ function App() {
   };
   
   return (
-    <Router basename='/index.html'>
+    <Router>
       <div>
         <Header />
       </div>
