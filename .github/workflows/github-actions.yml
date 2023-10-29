@@ -22,7 +22,7 @@ jobs:
           CI: false
       
       - name: Setup serve configuration
-        run: echo '{ "single": true }' > ./build/serve.json
+        run: echo '{ \"single\": true }' > build/serve.json
 
   package:
     runs-on: ubuntu-latest
