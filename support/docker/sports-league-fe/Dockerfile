@@ -2,6 +2,8 @@ FROM node:18-alpine
 
 WORKDIR /usr/src/app
 
+ENV HTTPS=true
+
 COPY package*.json ./
 
 RUN npm install
