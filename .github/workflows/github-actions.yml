@@ -52,11 +52,6 @@ jobs:
     needs: package
 
     steps:
-      - name: Download release artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: Package
-      - run: ls -la
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
