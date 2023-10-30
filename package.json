@@ -1,6 +1,7 @@
 {
   "name": "sports-league-webapp-frontend",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.12.1",
