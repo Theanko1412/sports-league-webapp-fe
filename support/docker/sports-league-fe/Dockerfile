@@ -1,19 +1,28 @@
 FROM node:18-alpine
 
-WORKDIR /usr/src/app
-
-ENV HTTPS=true
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
-
+COPY ./build ./build
 RUN npm install -g serve
+
+ENTRYPOINT ["serve", "-s", "build", "-l", "5000"]
 
 EXPOSE 5000
 
-ENTRYPOINT ["serve", "-s", "build", "-l", "5000"]
+# FROM node:18-alpine
+
+# WORKDIR /usr/src/app
+
+# ENV HTTPS=true
+
+# COPY package*.json ./
+
+# RUN npm install
+
+# COPY . .
+
+# RUN npm run build
+
+# RUN npm install -g serve
+
+# EXPOSE 5000
+
+# ENTRYPOINT ["serve", "-s", "build", "-l", "5000"]
