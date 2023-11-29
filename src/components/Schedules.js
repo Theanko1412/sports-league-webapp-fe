@@ -142,7 +142,7 @@ const [currentScores, setCurrentScores] = useState({home: '', away: ''});
   return (
     <div>
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-    "Doesn't refresh after result insert, manually switch tab and come back :P"
+    "Doesn't refresh after result insert, manually switch tab and come back"
   </div>
 <Table>
   <thead>
